@@ -12,14 +12,31 @@ devtools::install_github("ThinkRstat/nicetitle")
 ```R
 # write a sentense, select it an go in Addins > Nice Title
 
-this is a sentense
+# Part One
+
+1+1
+plot(iris)
+
+# Part Two
+lm(1~1)
 
 will be transformed as :
 
 ############################################################
 #                                                          #
-#                    this is a sentense                    #
+#                         Part One                         #
 #                                                          #
 ############################################################
+
+1+1
+plot(iris)
+
+############################################################
+#                                                          #
+#                         Part Two                         #
+#                                                          #
+############################################################
+
+lm(1~1)
 
 ```
