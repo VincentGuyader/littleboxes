@@ -1,5 +1,5 @@
 # nicetitle
-Rstudio Addin - create boxed title in an Rscript
+RStudio AddIn - creates boxed titles in an Rscript
 
 ## Installation
 
@@ -14,7 +14,7 @@ devtools::install_github("ThinkRstat/nicetitle")
 
 
 ```R
-# write a sentense, select it an go in Addins > Nice Title
+# write a sentence, highlight it and transform it into a nice title using Addins > Nice Title
 
 # Part One
 
@@ -24,7 +24,7 @@ plot(iris)
 # Part Two
 lm(1~1)
 
-will be transformed as :
+will be transformed in :
 
 ############################################################
 #                                                          #
