@@ -1,9 +1,0 @@
-Package: nicetitle
-Type: Package
-Title: Rstudio Addins - create boxed title in an Rscript
-Version: 0.1.0
-Author: Vincent Guyader
-Maintainer: Vincent Guyader <vincent@thinkr.fr>
-Description: Create boxed title in an Rscript
-License: MIT
-LazyData: TRUE
