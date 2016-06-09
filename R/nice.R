@@ -12,12 +12,10 @@ dd <- function(x) {
 
 toutbeau <- function(x, l = 60) {
   # print(x)
-  x <- gsub("^#+", "", x)
   x <- gsub("\n", " ", x)
-  x <-    gsub("^ +", " ", x)
-  x <-
-    gsub("^ ", " ", x)
-  x <-    gsub(" +$", " ", x)
+  x <- gsub("\t", " ", x)
+    x <- gsub("^[# ]+", "", x)
+  x <-    gsub("[# =]+$", " ", x)
   x <-    gsub(" $", " ", x)
   res <- paste(rep("#", l), collapse = "")
   res <- c(res, paste(c("#", rep(" ", l - 2), "#"), collapse = ""))
