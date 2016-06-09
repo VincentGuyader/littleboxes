@@ -9,6 +9,10 @@ devtools::install_github("ThinkRstat/nicetitle")
 ```
 ## usage
 
+![alt tag](https://raw.githubusercontent.com/ThinkRstat/nicetitle/master/demo.gif)
+
+
+
 ```R
 # write a sentense, select it an go in Addins > Nice Title
 
