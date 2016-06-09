@@ -6,6 +6,7 @@ Rstudio Addin - create boxed title in an Rscript
 ```R
 # install.packages("devtools")
 devtools::install_github("ThinkRstat/nicetitle")
+<<<<<<< HEAD
 
 ```
 ## usage
@@ -23,4 +24,6 @@ will be transformed as :
 #                                                          #
 ############################################################
 
+=======
+>>>>>>> 546f9d214041baa1e051ee990f18e2c3693d6422
 ```
