@@ -1,15 +1,15 @@
-# nicetitle
-RStudio AddIn - creates boxed titles in a Rscript
+# littleboxes
+RStudio Addin - creates boxed in titles in an Rscript
 
 ## Installation
 
 ```R
 # install.packages("devtools")
-devtools::install_github("ThinkRstat/nicetitle")
+devtools::install_github("ThinkRstat/littleboxes")
 ```
 ## Usage
 
-![alt tag](https://raw.githubusercontent.com/ThinkRstat/nicetitle/master/demo.gif)
+![alt tag](https://raw.githubusercontent.com/ThinkRstat/littleboxes/master/demo.gif)
 
 
 

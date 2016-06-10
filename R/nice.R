@@ -35,7 +35,7 @@ toutbeau <- function(x, l = 60) {
 }
 
 
-nicetitle <- function() {
+littleboxes <- function() {
   context <- rstudioapi::getActiveDocumentContext()
   for (sel in context$selection) {
     # print(sel)
