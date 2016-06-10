@@ -1,5 +1,5 @@
 # nicetitle
-Rstudio Addin - create boxed title in an Rscript
+RStudio AddIn - creates boxed titles in an Rscript
 
 ## Installation
 
@@ -24,7 +24,7 @@ plot(iris)
 # Part Two
 lm(1~1)
 
-will be transformed as :
+will be transformed in :
 
 ############################################################
 #                                                          #
