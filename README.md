@@ -14,7 +14,7 @@ devtools::install_github("ThinkRstat/nicetitle")
 
 
 ```R
-# write a sentense, select it an go in Addins > Nice Title
+# write a sentense, put your mouse in the line an go in Addins > Nice Title
 
 # Part One
 
