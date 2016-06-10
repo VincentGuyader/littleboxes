@@ -44,3 +44,4 @@ plot(iris)
 lm(1~1)
 
 ```
+[![Alt text](http://img.youtube.com/vi/yZnx-VbQ2bk/0.jpg)](https://www.youtube.com/watch?v=yZnx-VbQ2bk)
