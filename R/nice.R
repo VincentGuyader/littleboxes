@@ -5,7 +5,7 @@ dd <- function(x) {
       ceiling(base)), "#"), collapse = ""))
   }
   s1 <- strsplit(x, " ")[[1]]
-  c(dd(paste(s1[1:floor(length(s1)/2)], collapse = " ")), dd(paste(s1[ceiling(length(s1)/2):length(s1)],
+  c(Recall(paste(s1[1:floor(length(s1)/2)], collapse = " ")), Recall(paste(s1[ceiling(length(s1)/2):length(s1)],
     collapse = " ")))
 }
 
