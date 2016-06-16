@@ -2,7 +2,7 @@ dd <- function(x) {
   if (nchar(x) <= 56) {
     base <- (60 - nchar(x) - 2)/2
     return(paste(c("#", rep(" ", floor(base)), x, rep(" ",
-      ceiling(base)), "#"), collapse = ""))
+      ceiling(base)), "####"), collapse = ""))
   }
   s1 <- strsplit(x, " ")[[1]]
   c(Recall(paste(s1[1:floor(length(s1)/2)], collapse = " ")), Recall(paste(s1[ceiling(length(s1)/2):length(s1)],
