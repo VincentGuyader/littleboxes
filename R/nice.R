@@ -1,6 +1,6 @@
-dd <- function(x) {
-  if (nchar(x) <= 56) {
-    base <- (60 - nchar(x) - 2)/2
+dd <- function(x,l=60) {
+  if (nchar(x) <= (l-4)) {
+    base <- (l - nchar(x) - 2)/2
     return(paste(c("#", rep(" ", floor(base)), x, rep(" ",
       ceiling(base)), "####"), collapse = ""))
   }
@@ -21,7 +21,7 @@ toutbeau <- function(x, l = 60) {
   res <- c(res, paste(c("#", rep(" ", l - 2), "#"), collapse = ""))
 
 
-  res <- c(res, do.call(c, as.list(dd(x))))
+  res <- c(res, do.call(c, as.list(dd(x,l=l))))
 
 
 
