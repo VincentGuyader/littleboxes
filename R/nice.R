@@ -4,9 +4,22 @@ dd <- function(x,l=60) {
     return(paste(c("#", rep(" ", floor(base)), x, rep(" ",
       ceiling(base)), "#"), collapse = ""))
   }
-  s1 <- strsplit(x, " ")[[1]]
-  c(Recall(paste(s1[1:floor(length(s1)/2)], collapse = " ")), Recall(paste(s1[ceiling(length(s1)/2):length(s1)],
-    collapse = " ")))
+  
+  s1 <- strsplit(x, "\\s")[[1]]
+  
+  # si s1 trop long on découpe arbitraitement au milieu
+  if (length(s1)==1){
+    coupe <- nchar(s1)/2
+    s1 <- c(substr(s1,1,coupe),    substr(s1,1+coupe,nchar(s1)))
+  }
+  
+  c(Recall(
+    paste(s1[1:floor(length(s1)/2)], collapse = " "),l=l
+    ), 
+    Recall(
+      paste(s1[(1+floor(length(s1)/2)):length(s1)],collapse = " "),l=l
+      )
+    )
 }
 
 
@@ -19,13 +32,7 @@ toutbeau <- function(x, l = 60) {
   x <- gsub(" $", " ", x)
   res <- paste(rep("#", l), collapse = "")
   res <- c(res, paste(c("#", rep(" ", l - 2), "#"), collapse = ""))
-
-
   res <- c(res, do.call(c, as.list(dd(x,l=l))))
-
-
-
-
   res <- c(res, paste(c("#", rep(" ", l - 2), "#"), collapse = ""))
   res <- c(res, paste(rep("#", l), collapse = ""))
   res <- c(res, "")
@@ -40,8 +47,6 @@ littleboxes <- function() {
   for (sel in context$selection) {
     # print(sel)
     if (sel$text != "") {
-
-
       rstudioapi::modifyRange(sel$range, toutbeau(sel$text),
         context$id)
       break
