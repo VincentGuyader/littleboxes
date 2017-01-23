@@ -2,7 +2,7 @@ dd <- function(x,l=60) {
   if (nchar(x) <= (l-4)) {
     base <- (l - nchar(x) - 2)/2
     return(paste(c("#", rep(" ", floor(base)), x, rep(" ",
-      ceiling(base)), "#"), collapse = ""))
+      ceiling(base)), "####"), collapse = ""))
   }
   
   s1 <- strsplit(x, "\\s")[[1]]
