@@ -1,8 +1,8 @@
 dd <- function(x,l=60) {
   if (nchar(x) <= (l-10)) { # ptet pas -4 ici
     base <- (l - nchar(x) - 2)/2
-    return(paste(c("####", rep(" ", floor(base)-6), x, rep(" ",
-      ceiling(base)), "####"), collapse = ""))
+    return(paste(c("####", rep(" ", floor(base)-3), x, rep(" ",
+      ceiling(base)-3), "####"), collapse = ""))
   }
   
   s1 <- strsplit(x, "\\s")[[1]]
