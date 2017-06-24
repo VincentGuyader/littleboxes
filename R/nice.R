@@ -1,8 +1,8 @@
 dd <- function(x,l=60) {
-  if (nchar(x) <= (l-4)) {
+  if (nchar(x) <= (l-10)) { # ptet pas -4 ici
     base <- (l - nchar(x) - 2)/2
-    return(paste(c("#", rep(" ", floor(base)), x, rep(" ",
-      ceiling(base)), "#"), collapse = ""))
+    return(paste(c("####", rep(" ", floor(base)-6), x, rep(" ",
+      ceiling(base)), "####"), collapse = ""))
   }
   
   s1 <- strsplit(x, "\\s")[[1]]
@@ -30,11 +30,11 @@ toutbeau <- function(x, l = 60) {
   x <- gsub("^[# ]+", "", x)
   x <- gsub("[# =]+$", " ", x)
   x <- gsub(" $", " ", x)
-  res <- paste(rep("#", l), collapse = "")
+  res <- paste(c("##%",rep("#", l-6),"%##"), collapse = "")
   res <- c(res, paste(c("#", rep(" ", l - 2), "#"), collapse = ""))
   res <- c(res, do.call(c, as.list(dd(x,l=l))))
   res <- c(res, paste(c("#", rep(" ", l - 2), "#"), collapse = ""))
-  res <- c(res, paste(rep("#", l), collapse = ""))
+  res <- c(res, paste(c("##%",rep("#", l-6),"%##"), collapse = ""))
   res <- c(res, "")
   res
   res <- paste(res, collapse = "\n")
