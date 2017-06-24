@@ -7,8 +7,8 @@ RStudio Addin - creates boxed in titles in an Rscript
 # install.packages("devtools")
 devtools::install_github("ThinkRstat/littleboxes")
 
-# If you want to use the collapse functionnality use :
-devtools::install_github("ThinkRstat/littleboxes",ref="collapse")
+# If you just want boxes without any tricks using Rstudio outline 
+devtools::install_github("ThinkRstat/littleboxes",ref="simpleboxe")
 
 ```
 ## Usage
