@@ -18,7 +18,7 @@ devtools::install_github("ThinkRstat/littleboxes",ref="simpleboxe")
 
 
 ```R
-# write a sentence, place your cursor on the line and go to Addins > Nice Title
+# write a sentence, place your cursor on the line and go to Addins > Little Boxes
 
 # Part One
 
